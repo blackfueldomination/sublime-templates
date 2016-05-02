@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+import {Component} from 'angular2/core';
+
+@Component({
+	selector: "${1:stf-selector}",
+	inputs: [],
+	outputs: [],
+	template: `
+		${2:<h1>STF Component</h1>}
+	` 	
+})
+export class ${3:ComponentClass} {
+	
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>comp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>
