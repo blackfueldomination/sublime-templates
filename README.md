@@ -1,2 +1,0 @@
-# sublime-templates
-Sublime Templates

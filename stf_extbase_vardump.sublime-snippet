@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump(${1:msg});
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>txvd</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.php</scope>
-</snippet>
