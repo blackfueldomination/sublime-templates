@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+'${1:field_name}' => array(
+    'exclude' => 1,
+    'label' => 'LLL:EXT:${2:vendor}_${3:extension}/Resources/Private/Language/locallang_db.xlf:tx_${2:vendor}${3:extension}_domain_model_${4:modelname}.${1:field_name}',
+    'config' => array (
+        'type' => 'input',
+        'size' => ${5:30},
+        'eval' => '${6:trim}'
+    ),
+),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tca_type_input</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
