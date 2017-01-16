@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+\$query = \$this->createQuery();
+
+\$query->getQuerySettings()->setRespectStoragePage(false);
+\$query->getQuerySettings()->setRespectSysLanguage(false);
+
+
+\$query->matching(
+    \$query->equals( 'pid', \$pid )
+);
+
+\$constraints = array();
+\$constraints[] = \$query->equals( 'pid', \$pid );    
+\$constraints[] = \$query->equals( 'im_recipient', \$user );
+\$constraints[] = \$query->equals( 'im_deleteonrecipient', false );
+\$query->matching( \$query->logicalAnd(\$constraints) );
+
+\$query->setLimit(10);
+
+\$query->setOrderings( array( "sorting" =>\TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING ) );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ext_query</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope></scope>
+</snippet>
