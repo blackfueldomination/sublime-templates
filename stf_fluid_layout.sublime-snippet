@@ -1,0 +1,14 @@
+<snippet>
+<content><![CDATA[
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="${1:tx-ext-key}">
+	<f:render section="main" />
+</div>
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>f:layout</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!--scope>source.html</scope-->
+</snippet>
+    
